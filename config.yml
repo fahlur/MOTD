@@ -1,0 +1,9 @@
+settings:
+  multi-motd: false
+  system-motd: false
+motd:
+  ingame: "Welcome to the server!"
+  system: "&c&lHorizons Network \n&3Custom Plugin Development Server"
+  system-multi:
+  - "&c&lHorizons Network \n&3Plugin Development Server"
+  - "&c&lHorizons Network \n&3Testing new MOTD plugin!"
