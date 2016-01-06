@@ -1,0 +1,34 @@
+name: MOTD
+version: 1.0.0
+description: MOTD Changer Plugin
+depend: []
+author: Fahlur
+main: me.fahlur.motd.main
+
+commands:
+    motd:
+        usage: /<command>
+        description: View MOTD
+    setmotd:
+        usage: /<command>
+        description: Set MOTD
+    setsystemmotd:
+        usage: /<command>
+        description: Set system MOTD
+      
+Permissions:
+    motd.*:
+       description: Use all MOTD commands.
+       children:
+           motd.check: true
+           motd.set: true
+       default: op
+    motd.reload:
+        description: Reloads configuration file.
+        default: true
+    motd.check:
+        description: Check the MOTD.
+        default: true
+    motd.set:
+        description: Use the setmotd command to change the MOTD.
+        default: op
